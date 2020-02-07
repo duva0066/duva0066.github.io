@@ -1,0 +1,76 @@
+
+/* Controls logo size */
+header img{
+    max-width: 80px;
+}
+
+
+/* Sets background image */
+.intro{
+    background-image: url(/images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+/* Controls call to action */
+.cta{
+    max-width: 450px;
+}
+
+.cta h1{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 6rem;
+    font-size: 5rem;
+}
+
+.cta p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333131;
+    font-size: 1.5rem;
+}
+
+header,section{
+    padding-left: 80px;
+}
+
+footer{
+    background-color: #fffd8c;
+    padding: 1rem;
+    padding-left: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Makes sure CTA and application form are side by side */
+.intro{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Controls application form */
+.apply{
+    background-color: white;
+    box-shadow: 5px 5px 7px #8f8f8f;
+    border-radius: 5%;
+    margin: 4rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.apply p{
+    background-color: rgb(230, 230, 230);
+    padding: 0.5rem;
+}
+
+.apply h3{
+    background-color: #57eeab;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Makes the application form go under CTA after the screen becomes small enough */
+@media screen and (max-width: 700px){
+    .intro{
+        display: block;
+    }
+}
